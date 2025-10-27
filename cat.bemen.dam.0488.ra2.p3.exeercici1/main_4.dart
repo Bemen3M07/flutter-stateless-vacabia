@@ -11,8 +11,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // Crear el objeto de tipo Contact con los datos requeridos
     Contact contacto = Contact(
-      fullName: "Marta Casserres",
-      email: "marta@example.com",
+      fullName: "Edim CasaBatallas",
+      email: "marta_vuelve_conmigo_please@example.com",
       phone: "934748474"
     );
 
@@ -31,20 +31,18 @@ class MainApp extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Icono de contacto
-                const Center(
-                  child: Icon(
-                    Icons.person,
-                    size: 80,
-                    color: Color.fromARGB(255, 44, 121, 238),
-                  ),
-                ),
+                // Imagen de perfil circular
+              CircleAvatar(
+                radius: 60,
+                backgroundColor: const Color.fromARGB(255, 44, 121, 238),
+                backgroundImage: const AssetImage('assets/edim.jpg'),
+              ),
                 const SizedBox(height: 30),
                 
                 // Nombre completo
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Icon(Icons.person_outline, color: Colors.grey),
                     const SizedBox(width: 10),
@@ -61,6 +59,7 @@ class MainApp extends StatelessWidget {
                 
                 // Email
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Icon(Icons.email_outlined, color: Colors.grey),
                     const SizedBox(width: 10),
@@ -74,6 +73,7 @@ class MainApp extends StatelessWidget {
                 
                 // Teléfono
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Icon(Icons.phone_outlined, color: Colors.grey),
                     const SizedBox(width: 10),
