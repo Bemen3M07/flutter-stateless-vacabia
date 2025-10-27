@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MainApp4 extends StatelessWidget {
+  const MainApp4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +35,7 @@ class MainApp extends StatelessWidget {
                 backgroundImage: const AssetImage('assets/edim.jpg'),
               ),
                 const SizedBox(height: 30),
-                
+
                 // Nombre completo
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -56,7 +52,7 @@ class MainApp extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 20),
-                
+
                 // Email
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -70,7 +66,7 @@ class MainApp extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 20),
-                
+
                 // Teléfono
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MainApp3 extends StatelessWidget {
+  const MainApp3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +10,7 @@ class MainApp extends StatelessWidget {
         body:Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Text('This is a resource string', 
+              Text('This is a resource string',
               style: TextStyle(fontSize: 20),),
               SizedBox(height: 20,),
               Padding(
@@ -23,7 +19,7 @@ class MainApp extends StatelessWidget {
                 image: AssetImage('edim.jpg'),
                 width: 200,
                 height: 200,),
-                ) 
+                )
             ],
         ),
       ),

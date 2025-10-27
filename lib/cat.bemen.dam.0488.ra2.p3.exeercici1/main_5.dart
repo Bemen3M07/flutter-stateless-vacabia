@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-void main() {
-  runApp(const MainApp());
-}
-
 class Message {
   final String author;
   final String body;
@@ -12,8 +8,8 @@ class Message {
   Message(this.author, this.body);
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MainApp5 extends StatelessWidget {
+  const MainApp5({super.key});
 
   @override
   Widget build(BuildContext context) {
