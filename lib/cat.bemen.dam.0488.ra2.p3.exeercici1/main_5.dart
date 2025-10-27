@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
 class Message {
@@ -12,8 +12,8 @@ class Message {
   Message(this.author, this.body);
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -74,6 +74,7 @@ class _MessageListPageState extends State<MessageListPage> {
   }
 
   void _generateMoreMessages() {
+    // Genera 20 missatges més
     final newMessages = List.generate(20, (index) {
       return Message(
         names[random.nextInt(names.length)],
@@ -91,6 +92,7 @@ class _MessageListPageState extends State<MessageListPage> {
       ),
       body: NotificationListener<ScrollNotification>(
         onNotification: (scrollInfo) {
+          // Si arribem al final, generem més missatges
           if (scrollInfo.metrics.pixels ==
               scrollInfo.metrics.maxScrollExtent) {
             setState(() {
@@ -116,24 +118,6 @@ class _MessageListPageState extends State<MessageListPage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {}, // Sense funcionalitat
         child: const Icon(Icons.add),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.message),
-            label: 'Missatges',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.contacts),
-            label: 'Contactes',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Configuració',
-          ),
-        ],
-        currentIndex: 0, // Sense funcionalitat
-        onTap: (index) {}, // Sense funcionalitat
       ),
     );
   }
