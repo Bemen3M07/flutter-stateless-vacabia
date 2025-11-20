@@ -46,7 +46,7 @@ Mostra text i una imatge des dels recursos.
 S'ha de modificar el pubspec.yaml per crear la part dels /assets
 
 Column amb mainAxisAlignment.start: Alinea contingut a dalt a l'esquerra.
-Padding: Aplica marges al voltant de l'element.
+Padding: Aplica margens al voltant de l'element.
 Image: Carrega la imatge des de resources/asset/
     AssetImage('edim.jpg') -> dones el nom del asset
     Dimensions fixes (200x200) -> dondes la mida de la imatge.
@@ -56,11 +56,11 @@ Image: Carrega la imatge des de resources/asset/
  ### main_4.dart ###
 ###################
 Exercici 1.4
-Imatge rodona amb dades d'una persona amb les seves dades personals, nom, 
+Imatge rodona amb dades d'una persona amb les seves dades personals, nom,
 cognom, email i teléfon exposats davall de la imatge.
 
 
-Classe Contact: 
+Classe Contact:
 Tres propietats String (fullName, email, phone)
 Constructor amb required per camps obligatoris!
 
@@ -107,7 +107,7 @@ ListTile: Widget predefinit per elements de llista
  ### main_6.dart ###
 ###################
 Exercici 1.6
-Ampliació de l'exercici anterior on es fica una barra de navegació inferior estàtica amb 
+Ampliació de l'exercici anterior on es fica una barra de navegació inferior estàtica amb
 3 categoríes, Missatges, contactes i configuració. (No fan res si cliques).
 
 S'ha afegit al codi del main_5.dart:
