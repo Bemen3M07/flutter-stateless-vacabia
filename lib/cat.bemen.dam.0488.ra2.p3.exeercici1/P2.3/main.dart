@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'cat.bemen.dam.0488.ra2.p3.exeercici1/main_1.dart';
-import 'cat.bemen.dam.0488.ra2.p3.exeercici1/main_2.dart';
-import 'cat.bemen.dam.0488.ra2.p3.exeercici1/main_3.dart';
-import 'cat.bemen.dam.0488.ra2.p3.exeercici1/main_4.dart';
-import 'cat.bemen.dam.0488.ra2.p3.exeercici1/main_5.dart';
-import 'cat.bemen.dam.0488.ra2.p3.exeercici1/main_6.dart';
+import 'main_1.dart';
+import 'main_2.dart';
+import 'main_3.dart';
+import 'main_4.dart';
+import 'main_5.dart';
+import 'main_6.dart';
 
 void main() {
   runApp(const MyApp());
