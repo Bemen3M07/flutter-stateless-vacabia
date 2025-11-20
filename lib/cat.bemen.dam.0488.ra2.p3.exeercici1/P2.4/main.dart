@@ -1,3 +1,10 @@
+import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_1.dart';
+import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_2.dart';
+import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_3.dart';
+import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_4.dart';
+import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_5.dart';
+import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_6.dart';
+import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_8.dart';
 import 'package:flutter/material.dart';
 
 void main() {
