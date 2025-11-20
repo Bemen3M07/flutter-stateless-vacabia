@@ -8,6 +8,7 @@ import 'main_3.dart';
 import 'main_4.dart';
 import 'main_5.dart';
 import 'main_6.dart';
+import 'main_7.dart';
 
 class MainApp8 extends StatefulWidget {
   const MainApp8({super.key});
@@ -82,6 +83,8 @@ class NavigationScreen extends StatelessWidget {
             _buildDrawerItem(context, 3, 'Ejercicio 4 - Dados', Icons.looks_4),
             _buildDrawerItem(context, 4, 'Ejercicio 5 - Counter', Icons.looks_5),
             _buildDrawerItem(context, 5, 'Ejercicio 6 - Shopping List', Icons.looks_6),
+            _buildDrawerItem(context, 6, 'Ejercicio 7 - Provider', Icons.filter_7),
+
           ],
         ),
       ),
@@ -109,7 +112,7 @@ class NavigationScreen extends StatelessWidget {
       selectedTileColor: const Color(0xFF3498DB).withOpacity(0.1),
       onTap: () {
         navigationProvider.setExerciseIndex(index);
-        Navigator.pop(context); // Cierra el drawer
+        Navigator.pop(context); 
       },
     );
   }
@@ -117,19 +120,19 @@ class NavigationScreen extends StatelessWidget {
   Widget _buildCurrentExercise(int exerciseIndex) {
     switch (exerciseIndex) {
       case 0:
-        return const MainApp1(); // Ejercicio 1
+        return const MainApp1();
       case 1:
         return const MainApp2();
       case 2:
         return const MainApp3();
       case 3:
-        return const DiceGameScreen(); // Ejercicio 4 - Dados
+        return const MainApp4(); 
       case 4:
         return const MainApp5();
       case 5:
         return const MainApp6();
       default:
-        return const MainApp1();
+        return const MainApp7();
     }
   }
 

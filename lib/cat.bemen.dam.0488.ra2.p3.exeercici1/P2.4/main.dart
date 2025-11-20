@@ -1,11 +1,12 @@
-import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_1.dart';
-import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_2.dart';
-import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_3.dart';
-import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_4.dart';
-import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_5.dart';
-import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_6.dart';
-import 'package:empty/cat.bemen.dam.0488.ra2.p3.exeercici1/P2.4/main_8.dart';
 import 'package:flutter/material.dart';
+import 'main_1.dart';
+import 'main_2.dart';
+import 'main_3.dart';
+import 'main_4.dart';
+import 'main_5.dart';
+import 'main_6.dart';
+import 'main_7.dart';
+import 'main_8.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,7 @@ class MainMenu extends StatelessWidget {
             buildButton(context, "Run main4", const MainApp4()),
             buildButton(context, "Run main5", const MainApp5()),
             buildButton(context, "Run main6", const MainApp6()),
-            // buildButton(context, "Run main6", const MainApp7()),
+            buildButton(context, "Run main7", const MainApp7()),
             buildButton(context, "Run main8", const MainApp8()),
           ],
         ),
